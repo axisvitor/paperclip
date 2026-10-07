@@ -1,0 +1,51 @@
+# Proposta para revisão; não é contexto aprovado para produção.
+# Espelho de editorial_proposals em CONTEXTO-MARCA.yaml; manter ambos coerentes.
+editorial_proposals:
+  status: proposed_for_brand_review_not_approved
+  proposal_origin: suggested_editorial_direction_for_the_example_brand
+  positioning:
+    value_proposition: Ajudar o produtor de Canaã dos Carajás e região a entender aplicações e escolher soluções
+      adequadas ao seu trabalho, com informação clara e limites técnicos e comerciais explícitos.
+    note: Direção de comunicação sugerida; não comprova serviço, diferencial ou resultado atual.
+  voice:
+    tone: Técnico acessível, direto, respeitoso e prático.
+    communication_style: Explicar termos técnicos quando necessário, usar exemplos pertinentes ao produtor e convidar
+      para avaliação do caso sem prometer resultado genérico.
+  audience_needs_to_validate:
+  - Entender adequação da solução à aplicação
+  - Saber o que informar para uma consulta/orçamento
+  - Comparar modelos com critérios e documentação aplicáveis
+  - Entender condições de uso e cuidados documentados
+  content_pillars:
+  - id: irrigacao
+    name: 'Irrigação: preparação e critérios de decisão'
+    example: O que informar antes de solicitar orçamento; o que precisa estar claro no escopo.
+  - id: maquinas_implementos
+    name: 'Máquinas e implementos: aplicações e escolha'
+    example: Informações para discutir adequação ao trabalho; comparar só modelos reais documentados.
+  - id: ordenhadeiras
+    name: 'Ordenhadeiras: critérios de escolha e uso'
+    example: Critérios de compra e uso, após verificar fontes específicas do equipamento.
+    note: Pauta depende de fonte específica do equipamento; não presumir que todo pecuarista produz leite.
+  - id: uso_cuidados
+    name: Uso e cuidados documentados
+    example: Informações úteis dentro dos limites do fabricante; sem diagnóstico remoto ou garantia de produção.
+  - id: prova_real
+    name: Prova real autorizada da Agrisul
+    example: Casos, fotos e depoimentos verdadeiros, quando fornecidos e autorizados.
+  objectives:
+    editorial:
+    - Ensinar informação útil
+    - Apoiar uma decisão informada
+    - Preparar uma consulta pertinente à oferta confirmada
+    business:
+    - Apoiar procura pertinente com destino e capacidade confirmados
+    primary_metric: null
+    note: Não estabelecer meta de vendas, alcance ou conversão sem objetivo aprovado e dados reais.
+  cta_policy: Objetivo educativo pode usar convite a salvar/refletir/organizar informações. CTA comercial exige
+    contato, responsável, capacidade e oferta atuais confirmados; não prometer gratuidade, prazo ou atendimento
+    inexistente.
+  cadence: null
+  approval_mode: null
+  note: Frequência, metas, peso de cada pilar e política de aprovação continuam sem definição final. Essas propostas
+    não preenchem automaticamente os campos aprovados da marca.

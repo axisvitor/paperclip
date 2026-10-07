@@ -1,0 +1,275 @@
+# Empresa de exemplo: fatos fornecidos pelo usuário, campos pendentes e propostas separadas.
+# Clonar este arquivo não aprova a marca nem cria objetos no Paperclip.
+# IDs/revisões são resolvidos no bootstrap; null não autoriza inventar dados.
+# Voz, posicionamento e pilares em editorial_proposals NÃO ESTÃO APROVADOS.
+schema_version: '1.0'
+document_kind: brand_context
+identity:
+  brand_id: null
+  company_name: Agrisul canaa
+  brand_name: Agrisul canaa
+  description: Empresa que trabalha com irrigação, máquinas e implementos agrícolas, na área de agronomia e pecuária.
+  niche: Irrigação, máquinas e implementos agrícolas
+  market: Agronomia e pecuária
+  service_area: Canaã dos Carajás e região
+  locale: pt-BR
+  timezone: America/Sao_Paulo
+  official_sources: []
+positioning:
+  purpose: null
+  value_proposition: null
+  differentiators: []
+  category: Setor agropecuário
+  proof_points: []
+  anti_positioning: []
+audience:
+  primary_segments:
+  - Produtores rurais
+  - Fazendeiros
+  - Pecuaristas
+  needs: []
+  pains: []
+  desires: []
+  objections: []
+  knowledge_level: null
+  language_preferences: []
+  situations_of_use: []
+  evidence_refs: []
+products_services:
+- id: ordenhadeiras
+  name: Ordenhadeiras
+  kind: product_category
+  description: Categoria de produto informada pelo usuário.
+  brand: null
+  model: null
+  specifications: null
+  proven_benefits: []
+  evidence_refs: []
+  price: null
+  currency: null
+  commercial_terms: null
+  availability: null
+  official_url: null
+  source_type: user_message
+visual_identity:
+  direction: null
+  logo_asset_refs: []
+  palette: []
+  typography: []
+  composition_rules: []
+  imagery_rules: []
+  iconography_rules: []
+  approved_asset_refs: []
+  accessibility_requirements: []
+  prohibited_visual_treatments: []
+voice:
+  personality: []
+  tone: null
+  formality: null
+  communication_style: null
+  preferred_terms: []
+  prohibited_terms: []
+  emoji_policy: null
+  humor_policy: null
+  approved_examples: []
+  rejected_examples_with_reason: []
+references:
+  content: []
+  visual: []
+  competitors: []
+  avoid_imitation_of: []
+restrictions:
+  prohibited_topics: []
+  prohibited_claims: []
+  mandatory_disclosures: []
+  product_claim_rules: []
+  asset_usage_rules: []
+  privacy_rules: []
+  other_constraints: []
+objectives:
+  business: []
+  editorial: []
+  primary_metric: null
+  secondary_metrics: []
+  campaign_priorities: []
+channels:
+- id: instagram
+  role: primary
+  account_url: null
+  allowed_formats:
+  - static_post
+  - carousel
+  - story
+  production_scope: static_images_initially
+  export_profile: null
+  configuration_status: selected_by_user
+- id: whatsapp
+  role: secondary_reuse
+  allowed_formats:
+  - status
+  placement: status
+  placement_assumption: Status é o destino assumido para reaproveitar Stories; o usuário pode especificar outro
+    uso.
+  production_scope: static_images_initially
+  source_channel: instagram
+  source_format: story
+  selection_mode: selected_per_brief
+  reuse_all_stories: false
+  export_profile: null
+  configuration_status: selected_for_story_reuse
+channel_policy:
+  primary_channel_id: instagram
+  expand_on_user_request: true
+  automatically_enable_other_networks: false
+  additional_networks: []
+  new_channel_process: Quando o usuário solicitar outra rede, registrar o canal e definir formatos, parâmetros de
+    exportação, adaptações e critérios de revisão antes de produzir para ele.
+  story_reuse:
+    decision_field: reuse_on_whatsapp_status
+    default: false
+    source_content_and_revision_required: true
+    create_linked_variant: true
+    independent_review_required: true
+    preserve_unaffected_source: true
+    checks:
+    - Conferir texto, CTA e links no destino.
+    - Adaptar menções, stickers e elementos que dependem do Instagram.
+    - Conferir proporção, cortes, margens e leitura no Status.
+    - Registrar o arquivo e a revisão efetivamente entregues.
+    note: O pedido de reaproveitamento seleciona a variante; a aprovação do Story original não aprova automaticamente
+      uma adaptação.
+  scheduling_or_publication_authorized: false
+editorial_policy:
+  content_pillars: []
+  allowed_formats:
+  - static_post
+  - carousel
+  - story
+  - status
+  cta_rules: []
+  evidence_freshness_policy: null
+  approval_mode: null
+  human_approval_required_for: []
+  publication_in_scope: false
+operations:
+  monthly_budget_amount: null
+  currency: null
+  per_content_budget_amount: null
+  max_parallel_contents_proposed: 3
+  max_active_runs_per_specialist_proposed: 1
+  max_editorial_revision_rounds_proposed: 2
+  max_additional_transient_retries_proposed: 2
+  target_turnaround: null
+  scheduled_production_enabled: false
+  schedule: null
+  routine_concurrency_policy: coalesce_if_active
+  routine_catch_up_policy: skip_missed
+governance:
+  brand_owner_user_id: null
+  editorial_agent_id: null
+  canonical_changes_require_brand_owner: true
+  proposed_changes_document_key: brand-change-proposals
+  include_secret_values: false
+readiness:
+  research_requires:
+  - identity.brand_id
+  - identity.brand_name
+  - identity.niche
+  - positioning.value_proposition
+  - audience.primary_segments
+  - objectives.editorial
+  - restrictions
+  - approved_brand_publication_receipt
+  copy_requires_additionally:
+  - voice.tone
+  - voice.communication_style
+  - channels
+  - editorial_policy.cta_rules
+  - accepted_research_and_brief_revisions
+  design_requires_additionally:
+  - visual_identity.direction
+  - visual_identity.palette
+  - visual_identity.typography
+  - required_assets_for_selected_layout
+  - target_channel_export_profile
+  - accepted_copy_revision
+  - verified_visual_tooling
+  paid_execution_requires:
+  - authorized_runtime_credentials
+  - operations.monthly_budget_amount
+  - operations.currency
+  - verified_budget_enforcement
+editorial_proposals:
+  status: proposed_for_brand_review_not_approved
+  proposal_origin: suggested_editorial_direction_for_the_example_brand
+  positioning:
+    value_proposition: Ajudar o produtor de Canaã dos Carajás e região a entender aplicações e escolher soluções
+      adequadas ao seu trabalho, com informação clara e limites técnicos e comerciais explícitos.
+    note: Direção de comunicação sugerida; não comprova serviço, diferencial ou resultado atual.
+  voice:
+    tone: Técnico acessível, direto, respeitoso e prático.
+    communication_style: Explicar termos técnicos quando necessário, usar exemplos pertinentes ao produtor e convidar
+      para avaliação do caso sem prometer resultado genérico.
+  audience_needs_to_validate:
+  - Entender adequação da solução à aplicação
+  - Saber o que informar para uma consulta/orçamento
+  - Comparar modelos com critérios e documentação aplicáveis
+  - Entender condições de uso e cuidados documentados
+  content_pillars:
+  - id: irrigacao
+    name: 'Irrigação: preparação e critérios de decisão'
+    example: O que informar antes de solicitar orçamento; o que precisa estar claro no escopo.
+  - id: maquinas_implementos
+    name: 'Máquinas e implementos: aplicações e escolha'
+    example: Informações para discutir adequação ao trabalho; comparar só modelos reais documentados.
+  - id: ordenhadeiras
+    name: 'Ordenhadeiras: critérios de escolha e uso'
+    example: Critérios de compra e uso, após verificar fontes específicas do equipamento.
+    note: Pauta depende de fonte específica do equipamento; não presumir que todo pecuarista produz leite.
+  - id: uso_cuidados
+    name: Uso e cuidados documentados
+    example: Informações úteis dentro dos limites do fabricante; sem diagnóstico remoto ou garantia de produção.
+  - id: prova_real
+    name: Prova real autorizada da Agrisul
+    example: Casos, fotos e depoimentos verdadeiros, quando fornecidos e autorizados.
+  objectives:
+    editorial:
+    - Ensinar informação útil
+    - Apoiar uma decisão informada
+    - Preparar uma consulta pertinente à oferta confirmada
+    business:
+    - Apoiar procura pertinente com destino e capacidade confirmados
+    primary_metric: null
+    note: Não estabelecer meta de vendas, alcance ou conversão sem objetivo aprovado e dados reais.
+  cta_policy: Objetivo educativo pode usar convite a salvar/refletir/organizar informações. CTA comercial exige
+    contato, responsável, capacidade e oferta atuais confirmados; não prometer gratuidade, prazo ou atendimento
+    inexistente.
+  cadence: null
+  approval_mode: null
+  note: Frequência, metas, peso de cada pilar e política de aprovação continuam sem definição final. Essas propostas
+    não preenchem automaticamente os campos aprovados da marca.
+shared_context_policy:
+  purpose: Compartilhar apenas o contexto necessário e preservar a distinção entre fatos do usuário e propostas.
+  approved_brand_receipt_required_for_production: true
+  user_facts_are_distinct_from_proposals: true
+  copy_design_inputs: Contexto aprovado, pauta/copy aceitas, claims e assets selecionados com fonte e permissão.
+  document_keys:
+    context: brand-context
+    publication: brand-publication
+  runtime_access_limit: Seleção de contexto e governança documental não comprovam isolamento por ACL ou sandbox.
+input_provenance:
+  source_type: user_provided_example_facts
+  confirmed_fields:
+  - identity.company_name
+  - identity.brand_name
+  - identity.description
+  - identity.niche
+  - identity.market
+  - identity.service_area
+  - positioning.category
+  - audience.primary_segments
+  - products_services.ordenhadeiras
+  - channels
+  - channel_policy
+  note: Nome, áreas, região, públicos, ordenhadeiras e política de canais foram informados pelo usuário. Status
+    é destino assumido; produção em imagem é o escopo inicial. A seção editorial_proposals continua sem aprovação.

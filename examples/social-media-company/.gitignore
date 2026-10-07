@@ -1,0 +1,12 @@
+# Local Paperclip receipts, workspaces and private source material.
+.runtime/
+workspaces/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+paperclip-records.json
+paperclip-export.json
+REGISTRO-MARCA.yaml
+drive-materials/
+*.zip
